@@ -1,8 +1,47 @@
 body {
     background: black;
     color: white;
+    font-family: 'Kotta One', sans-serif;
 }
 #lyric {
     font-family: Norican, arial, sans-serif;
+    float: right;
+    font-size: 24px;
+    height: 600px;
+    width: 300px;
+    overflow: auto;
+    padding: 8px;
+    display: none;
+}
+#artist {
+    padding-left: 80px;
+    font-size: 36px;
+    display: none;
+}
+#song_title {
+    padding-left: 20px;
+    font-size: 36px;
+    display: none;
+}
+#by {
+    display: none;
+    padding-left: 60px;
+    font-size: 36px;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 0px;
+}
+#reflected_artist {
+    position: relative;
+    padding-left: 80px;
+    bottom: -.35em;
+    left: 0;
+    right: 0;
+    opacity: .6;
+    -webkit-transform: scaleY(-1);
+    font-size: 36px;
+    display: none;
+
 
 }

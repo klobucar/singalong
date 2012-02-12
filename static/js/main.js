@@ -23,11 +23,16 @@ function query_api(lyric) {
 }
 function build_divs(data) {
     console.log(data);
-    debugger;
     var formatted_lyric = data.lyric.replace(/\n/g, '<br />');
 
     $('#lyric').html(formatted_lyric);
     $('#song_title').html(data.song.title);
     $('#artist').html(data.song.artist.name);
+    $('#lyric').fadeIn(2500);
+    $('#artist').fadeIn(900);
+    $('#song_title').fadeIn(500);
+    $('#by').fadeIn(700);
+    $('#reflected_artist').html(data.song.artist.name);
 
+    setTimeout(function(){$('#reflected_artist').fadeIn(500);}, 1500);
 }
