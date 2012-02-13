@@ -35,7 +35,7 @@ body {
 #reflected_artist {
     position: relative;
     padding-left: 80px;
-    bottom: -.35em;
+    bottom: -.15em;
     left: 0;
     right: 0;
     opacity: .6;
