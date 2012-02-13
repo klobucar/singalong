@@ -17,7 +17,6 @@ def api_lyric_get():
   lyric = request.args.get('lyric')
   song = ly.song_look_up_by_lyric(lyric)
   api_result['song'] = song
-  #if song['viewable_lrc']:
   lyrics_flattened = ly.get_lyric_for_song(song.get('amg', 0))
   api_result['lyric'] = lyrics_flattened
   return jsonify(api_result)
