@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Find that song!</title></head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="static/js/main.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'/>
+  <link href='http://fonts.googleapis.com/css?family=Kotta+One' rel='stylesheet' type='text/css'/>
+  <link href='static/css/style.css' rel='stylesheet' type='text/css'/>
+  <body>
+    <form action="#" method="get" id="searchform">
+      <input title="Search"  type="text" name="lyric"  x-webkit-speech="" x-webkit-grammar="builtin:search" onwebkitspeechchange="startSearch()" />
+    </form>
+    <div class="lyrics" style="display: block;">
+    <div id="lyric"></div>
+    <div id="song_title"></div>
+    <div id="by">by</div>
+    <div id="artist"></div>
+    <div id="reflected_artist"></div>
+    </div>
+  </body>
+</html>
