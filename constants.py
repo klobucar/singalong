@@ -1,0 +1,9 @@
+class Constants:
+  LYRICFIND_KEY = "<INSERT_KEY_HERE>"
+  LYRICFIND_DISPLAY = "<INSERT_KEY_HERE>"
+  LYRICFIND_LRC = "<INSERT_KEY_HERE>"
+
+  LYRICFIND_API = {
+    'search': "<INSERT_KEY_HERE>",
+    'lyric': "<INSERT_KEY_HERE>",
+  }
