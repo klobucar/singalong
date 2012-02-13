@@ -49,7 +49,3 @@ class LyricApi(object):
     response, content = http.request(look_up_url)
     json_content = loads(content)
     return json_content
-
-  # http://test.lyricfind.com/api_service/search.do?apikey=07838f804b6e6c39ce6b957fe9be4499&displaykey=d34e7a583d25d753361d0b60d423e35b&searchtype=track&reqtype=default&lyrics=money
-
-  #http://test.lyricfind.com/api_service/lyric.do?apikey=2233d1d669999ce64ee0eb073d6da191&lrckey=d34e7a583d25d753361d0b60d423e35b&reqtype=default&trackid=amg:10449506&format=lrc
